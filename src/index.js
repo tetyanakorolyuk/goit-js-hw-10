@@ -13,7 +13,7 @@ const refs = {
     cardInfo: document.querySelector('.country-info')
 };
 
-refs.input.addEventListener('input', debounce(onSearch), DEBOUNCE_DELAY);
+refs.input.addEventListener('input', debounce(onSearch, DEBOUNCE_DELAY));
 
 function onSearch(e) {
     e.preventDefault();
